@@ -17,7 +17,9 @@
             },
             function(data) {
                 console.log(data);
-            }, 'json'); // End of aJax
+            }, 'json').fail(function(responseText) {
+            console.log(responseText.responseText);
+        }); // End of aJax
     </script>
 </body>
 
